@@ -1,7 +1,7 @@
 classes:
 - system.linux.system.lowmem
 - system.linux.system.repo.contrail
-- system.linux.system.repo.mos8
+- system.linux.system.repo.mos9
 - service.keepalived.cluster.single
 - service.haproxy.proxy.single
 - service.memcached.server.single

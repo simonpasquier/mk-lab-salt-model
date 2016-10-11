@@ -1,5 +1,5 @@
 classes:
-- system.openstack.common.mk20_lab
+- system.openstack.common.mk22_lab
 parameters:
   _param:
     monitor_vip_address: 172.16.10.253
@@ -16,54 +16,54 @@ parameters:
           address: 172.16.10.100
           names:
           - cfg01
-          - cfg01.mk20-lab-expert.local
+          - cfg01.mk22-lab-advanced.local
         ctl01:
           address: ${_param:cluster_node01_address}
           names:
           - ${_param:cluster_node01_hostname}
-          - ${_param:cluster_node01_hostname}.mk20-lab-expert.local
+          - ${_param:cluster_node01_hostname}.mk22-lab-advanced.local
         ctl02:
           address: ${_param:cluster_node02_address}
           names:
           - ${_param:cluster_node02_hostname}
-          - ${_param:cluster_node02_hostname}.mk20-lab-expert.local
+          - ${_param:cluster_node02_hostname}.mk22-lab-advanced.local
         ctl03:
           address: ${_param:cluster_node03_address}
           names:
           - ${_param:cluster_node03_hostname}
-          - ${_param:cluster_node03_hostname}.mk20-lab-expert.local
+          - ${_param:cluster_node03_hostname}.mk22-lab-advanced.local
         cmp01:
           address: 172.16.10.105
           names:
           - cmp01
-          - cmp01.mk20-lab-expert.local
+          - cmp01.mk22-lab-advanced.local
         cmp02:
           address: 172.16.10.106
           names:
           - cmp02
-          - cmp02.mk20-lab-expert.local
+          - cmp02.mk22-lab-advanced.local
         mon01:
           address: ${_param:monitor_node01_address}
           names:
           - mon01
-          - mon01.mk20-lab-expert.local
+          - mon01.mk22-lab-advanced.local
         mon02:
           address: ${_param:monitor_node01_address}
           names:
           - mon02
-          - mon02.mk20-lab-expert.local
+          - mon02.mk22-lab-advanced.local
         mon03:
           address: ${_param:monitor_node01_address}
           names:
           - mon03
-          - mon03.mk20-lab-expert.local
+          - mon03.mk22-lab-advanced.local
         mon:
           address: ${_param:monitor_vip_address}
           names:
           - mon
-          - mon.mk20-lab-expert.local
+          - mon.mk22-lab-advanced.local
         ctl:
           address: ${_param:cluster_vip_address}
           names:
           - ctl
-          - ctl.mk20-lab-expert.local
+          - ctl.mk22-lab-advanced.local
