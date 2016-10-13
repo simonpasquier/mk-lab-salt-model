@@ -30,3 +30,7 @@ parameters:
       repo:
         tcpcloud:
           source: "deb [arch=amd64] http://apt.tcpcloud.eu/nightly/ trusty main security extra tcp tcp-salt"
+  reclass:
+    storage:
+      data_source:
+        engine: noop
