@@ -30,3 +30,49 @@ parameters:
     system:
       name: cfg01
       domain: mk20-stacklight-basic.local
+  reclass:
+    storage:
+      data_source:
+        engine: local
+  salt:
+    master:
+      environment:
+        dev:
+          formula:
+            ntp:
+              revision: stacklight
+            linux:
+              revision: stacklight
+            collectd:
+              revision: stacklight
+            heka:
+              revision: stacklight
+            rabbitmq:
+              address: https://github.com/simonpasquier/salt-formula-rabbitmq.git
+              revision: fix-collectd
+            galera:
+              address: https://github.com/simonpasquier/salt-formula-galera.git
+              revision: add-collectd-support
+            haproxy:
+              address: https://github.com/simonpasquier/salt-formula-haproxy.git
+              revision: add-collectd-support
+            memcached:
+              address: https://github.com/simonpasquier/salt-formula-memcached.git
+              revision: add-collectd-support
+            cinder:
+              address: https://github.com/simonpasquier/salt-formula-cinder.git
+              revision: add-collectd-support
+            glance:
+              address: https://github.com/simonpasquier/salt-formula-glance.git
+              revision: add-collectd-support
+            keystone:
+              address: https://github.com/simonpasquier/salt-formula-keystone.git
+              revision: add-collectd-support
+            heat:
+              revision: stacklight
+            nova:
+              address: https://github.com/simonpasquier/salt-formula-nova.git
+              revision: add-collectd-support
+            neutron:
+              address: https://github.com/simonpasquier/salt-formula-neutron.git
+              revision: add-collectd-support
