@@ -11,7 +11,8 @@ parameters:
     heka_amqp_host: mon
     heka_amqp_password: workshop
     heka_elasticsearch_host: mon
-    heka_influxdb_host: mon
+    # InfluxDB is only running on a single node
+    heka_influxdb_host: mon1
     grafana_influxdb_host: mon
     opencontrail_version: 3.0
     opencontrail_compute_dns: 8.8.8.8
