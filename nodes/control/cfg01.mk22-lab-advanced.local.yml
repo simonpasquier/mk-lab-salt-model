@@ -10,3 +10,7 @@ parameters:
     system:
       name: cfg01
       domain: mk22-lab-advanced.local
+  reclass:
+    storage:
+      data_source:
+        engine: local
